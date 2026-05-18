@@ -20,6 +20,7 @@ O controle foi projetado para se assemelhar visualmente ao Wiimote original, com
 - **1 botão na parte inferior** — botão de gatilho/hold para segurar a bola durante o swing
 - **1 speaker** — feedback de áudio ao arremessar
 O gesto de arremesso é detectado pelo IMU: o jogador segura o botão inferior, realiza o movimento de balanço e solta o botão no momento do arremesso — reproduzindo fielmente a mecânica do jogo original.
+- **1 LED** - controle conectado.
  
 | Sketch do projeto | Controle real (referência) |
 |:-----------------:|:--------------------------:|
@@ -65,7 +66,7 @@ A leitura do IMU utiliza **SPI** (ou I²C dependendo do modelo escolhido), com t
  
 O firmware segue a arquitetura de um RTOS com tasks independentes, desacopladas por filas e sincronizadas por semáforos.
  
-![Sketch](img/diagrama_aps2.png)
+![Sketch](img/diagrama_aps2_.png)
  
 ### Tasks
  
